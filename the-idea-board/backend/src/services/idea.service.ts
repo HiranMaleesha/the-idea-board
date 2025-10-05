@@ -10,9 +10,9 @@ export class IdeaService {
   async getAllIdeas(): Promise<IdeaResponse[]> {
     try {
       const db = getDb();
+      // Simple query without composite index requirement
       const snapshot = await db
         .collection(COLLECTION_NAME)
-        .orderBy('upvotes', 'desc')
         .orderBy('createdAt', 'desc')
         .get();
 
