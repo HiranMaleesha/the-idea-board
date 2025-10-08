@@ -84,7 +84,7 @@ export default function Home() {
               Community Driven
             </h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Let the community decide what's great. Upvote the ideas you love and watch the best concepts rise to the top.
+              Let the community decide what&apos;s great. Upvote the ideas you love and watch the best concepts rise to the top.
             </p>
           </div>
 

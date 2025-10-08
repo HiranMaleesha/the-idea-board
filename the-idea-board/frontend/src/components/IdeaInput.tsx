@@ -34,7 +34,7 @@ export function IdeaInput({ onSubmit }: IdeaInputProps) {
       await onSubmit(text.trim());
       setText('');
       setError(null);
-    } catch (err) {
+    } catch {
       setError('Failed to submit idea. Please try again.');
     } finally {
       setIsSubmitting(false);
